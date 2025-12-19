@@ -14,8 +14,8 @@ int main() {
     int32_t x3 = 20;  // some machines may have different sizes for normal data types
 
     printf("x1 = %d; x2 = %d", x1, x2);
-    printf("Size of int is %lu bytes\n", sizeof(int));
-    printf("Size of x2 is %lu bytes\n", sizeof(x2));
+    printf("Size of int is %lu bytes\n", sizeof(int));  // get the size of a data type
+    printf("Size of x2 is %lu bytes\n", sizeof(x2));  // get the size of a variable
     printf("Size of int32_t is %lu bytes\n", sizeof(int32_t));
 
     // short
