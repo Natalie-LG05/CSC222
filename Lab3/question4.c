@@ -12,7 +12,7 @@ int main() {
     printf("Enter number of gallons of gas used: ");
     scanf("%f", &gallons);
 
-    float milesPerGallon = miles / gas;
+    float milesPerGallon = miles / gallons;
     printf("Mile-per-gallon: %.2f\n", milesPerGallon);
 
     float liters = gallons * LITERS_PER_GALLON;
