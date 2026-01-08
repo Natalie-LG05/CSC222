@@ -24,8 +24,8 @@ int main() {
         printf("- %.2lf at %p\n", *p, p);
     }
 
-    printf("Average %lf", average);
-    printf("Letter Grade: %c", letterGrade);
+    printf("Average %lf\n", average);
+    printf("Letter Grade: %c\n", letterGrade);
     
     return 0;
 }
