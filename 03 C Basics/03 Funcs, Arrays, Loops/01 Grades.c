@@ -4,6 +4,7 @@
 // define the header of the function
 // stating types for parameters and return
 double computeAverage(double values[], int size);
+char getLetterGrade(double numericGrade);
 
 int main() {
     // An array of grades
@@ -20,8 +21,14 @@ int main() {
     // calculate the size on the outside of the function
     int length = sizeof(grades) / sizeof(double);
     printf("Number of grades: %d\n", length);
+
+    // compute the average
     double average = computeAverage(grades, length);
     printf("Average: %lf\n", average);
+
+    // get the letter grade
+    char letterGrade = getLetterGrade(average);
+    printf("Letter Grade: %c\n", letterGrade);
     
     return 0;
 }
@@ -33,4 +40,12 @@ double computeAverage(double values[], int length) {
         sum += values[i];
     }
     return (sum / length);  // result will be a double since sum is a double, even though length is an int
+}
+
+char getLetterGrade(double numericGrade) {
+    if (numericGrade >= 90) return 'A';
+    else if (numericGrade >= 80) return 'B';
+    else if (numericGrade >= 70) return 'C';
+    else if (numericGrade >=60) return 'D';
+    else return 'F';
 }
