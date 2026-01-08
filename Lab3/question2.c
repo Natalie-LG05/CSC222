@@ -27,5 +27,6 @@ int main() {
         printf("%dd %dh %dm %ds\n", days, hours, minutes, seconds);
     }
     
+    printf("Done.\n");
     return 0;
 }
