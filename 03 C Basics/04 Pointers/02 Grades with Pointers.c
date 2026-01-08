@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 // Functional Prototypes
-double computerAverage(double *values, int size);
+double computeAverage(double *values, int size);
 char getLetterGrade(double numericGrade);
 
 int main() {
