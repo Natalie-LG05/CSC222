@@ -1,4 +1,5 @@
 #include <stdio.h>
+// #include <string.h>  // this is for fancy work with strings
 
 // Functional Prototyping
 // define the header of the function
@@ -29,6 +30,19 @@ int main() {
     // get the letter grade
     char letterGrade = getLetterGrade(average);
     printf("Letter Grade: %c\n", letterGrade);
+
+    // Strings 
+    // Strings are character arrays
+    char studentName[] = "Edward";  // double quotes for "string" literal
+    printf("Student Name: %s\n", studentName);
+
+    // print individual grades with a while loop
+    printf("Grades:\n");
+    int i = 0;
+    while (i < length) {
+        printf("- %.2lf\n", grades[i]);
+        i++;
+    }
     
     return 0;
 }
