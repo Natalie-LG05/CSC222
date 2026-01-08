@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    printf("Enter a negative value at any point to quit.")
+    printf("Enter a negative value at any point to quit.");
     while (1) {
         int input;
         printf("Enter the number of seconds to convert: ");
