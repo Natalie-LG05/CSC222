@@ -6,7 +6,7 @@ const int MIN_IN_HOUR = 60;
 const int SEC_IN_MIN = 60;
 
 int main() {
-    printf("Enter a negative value at any point to quit.");
+    printf("Enter a negative value at any point to quit.\n");
     while (1) {
         int seconds;
         printf("Enter the number of seconds to convert: ");
@@ -24,7 +24,7 @@ int main() {
         int minutes = seconds / (SEC_IN_MIN);  // get the number of whole minutes
         seconds -= minutes * (SEC_IN_MIN);  // take off the number of seconds used to make up the whole minutes
 
-        printf("%dd %dh %dm %ds", days, hours, minutes, seconds);
+        printf("%dd %dh %dm %ds\n", days, hours, minutes, seconds);
     }
     
     return 0;
