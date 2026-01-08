@@ -18,5 +18,6 @@ int main() {
         printf("\n");
     }
     
+    printf("Bye\n");
     return 0;
 }
