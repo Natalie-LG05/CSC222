@@ -6,7 +6,6 @@ int main() {
         int input;
         printf("Enter the number of seconds to convert: ");
         scanf("%d", &input);
-        printf("\n");
 
         if (input < 0) break;
 
