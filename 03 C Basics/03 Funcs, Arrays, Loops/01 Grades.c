@@ -19,6 +19,7 @@ int main() {
     // arrays decay to pointers when you pass them into functions
     // calculate the size on the outside of the function
     int length = sizeof(grades) / sizeof(double);
+    printf("Number of grades: %d\n", length);
     double average = computeAverage(grades, length);
     printf("Average: %lf\n", average);
     
