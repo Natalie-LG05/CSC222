@@ -17,6 +17,7 @@ int main() {
     // that is, you can get the value at that memory location instead of the memory location
     // The * here is called the indirection operator
     printf("Variable num: %d\n", *numPtr);
+    printf("%lu\n", sizeof(numPtr));
     
     return 0;
 }
