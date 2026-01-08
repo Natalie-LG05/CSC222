@@ -2,7 +2,6 @@
 
 int main(int argc, char *argv[]) {
     printf("%d\n", argc);
-    return 0;
     
     for (int i = 0; i < argc; i++ ) {
         printf("%s ", argv[i]);
