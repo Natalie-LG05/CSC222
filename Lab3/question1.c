@@ -5,6 +5,7 @@ int main(char *argv[], int argc) {
         printf("%s ", argv[i]);
     }
     printf("\n");
+    return 0;
     
     if (argc < 2) {
         printf("Must provide at least 2 arguments.\n");
