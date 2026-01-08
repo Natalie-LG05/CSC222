@@ -1,6 +1,9 @@
 #include <stdio.h>
 
 int main(char *argv[], int argc) {
+    printf("%d\n", argc);
+    return 0;
+    
     for (int i = 0; i < argc; i++ ) {
         printf("%s ", argv[i]);
     }
