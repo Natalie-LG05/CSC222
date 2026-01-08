@@ -5,7 +5,7 @@ int main() {
     while (1) {
         int input;
         printf("Enter the number of seconds to convert: ");
-        scanf("%d", $input);
+        scanf("%d", &input);
 
         if (input < 0) break;
 
