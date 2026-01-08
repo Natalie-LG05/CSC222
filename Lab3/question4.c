@@ -17,7 +17,7 @@ int main() {
 
     float liters = gallons * LITERS_PER_GALLON;
     float kilometers = miles * KILOMETERS_PER_MILE;
-    float litersPer100Kilometers = liters / (100 * kilometers);
+    float litersPer100Kilometers = liters / (kilometers);
     printf("Liters-per-100-Kilometers: %.1f\n", litersPer100Kilometers);
     
     return 0;
