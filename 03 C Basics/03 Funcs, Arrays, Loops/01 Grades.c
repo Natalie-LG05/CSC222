@@ -3,7 +3,7 @@
 // Functional Prototyping
 // define the header of the function
 // stating types for parameters and return
-double computeAverage(double values[]);
+double computeAverage(double values[], int size);
 
 int main() {
     // An array of grades
@@ -19,15 +19,17 @@ int main() {
     // arrays decay to pointers when you pass them into functions
     // calculate the size on the outside of the function
     int length = sizeof(grades) / sizeof(double);
-    double average = computeAverage(grades);
+    double average = computeAverage(grades, length);
+    printf("Average: %lf\n", average);
     
     return 0;
 }
 
-double computeAverage(double values[]) {
+double computeAverage(double values[], int length) {
+    // reminder, size is being passed in because arrays decay to pointers when passed into functions
     double sum = 0.0;
-    int length = sizeof(values) / sizeof(double);
     for (int i = 0; i < length; i++) {
-        
+        sum += values[i];
     }
+    return (sum / length);  // result will be a double since sum is a double, even though length is an int
 }
