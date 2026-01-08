@@ -6,7 +6,7 @@ int main(int argc, char *argv[]) {
     } else if ((argc - 1) > 6) {
         printf("Must provide at most 6 arguments.\n");
     } else {
-        for (int i = 1; i < (argc - 1); i++) {
+        for (int i = 1; i < argc; i++) {
             if (i % 2 == 1) printf("%c ", argv[i][0]);  // print the 1st character of odd arguments
             else printf("%c ", argv[i][1]);  // print the 2nd character of even arguments
         }
