@@ -17,7 +17,7 @@ int main() {
     printDeltaStatement();  // print a statement about the accuracy of the calculation
     double delta = promptUser('d');  // get delta
 
-    sum = calculateRiemannSum(a, b, delta);    
+    double sum = calculateRiemannSum(a, b, delta);    
     printf("The integral over the provided lmits is %.4lf", sum);
     return 0;
 }
