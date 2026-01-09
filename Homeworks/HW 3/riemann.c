@@ -9,9 +9,6 @@ double f(double x);
 double calculateRiemannSum(double a, double b, double delta);
 
 int main() {
-    printf("%lf\n", pow(2, 3));
-    return 0;
-
     printIntro();  // print the intro statement
 
     // get all three user given variables
@@ -49,8 +46,7 @@ void printDeltaStatement() {
 }
 
 double f(double x) {
-    return 0.0;
-    // return (3*pow(x, 3)) - (2*pow(x, 2));
+    return (3*pow(x, 3)) - (2*pow(x, 2));
 }
 
 double calculateRiemannSum(double a, double b, double delta) {
