@@ -50,5 +50,5 @@ double f(double x) {
 }
 
 double calculateRiemannSum(double a, double b, double delta) {
-
+    return 0.0;
 }
