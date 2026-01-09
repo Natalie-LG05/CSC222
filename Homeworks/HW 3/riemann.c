@@ -49,7 +49,8 @@ void printDeltaStatement() {
 }
 
 double f(double x) {
-    return (3*pow(x, 3)) - (2*pow(x, 2));
+    return 0.0;
+    // return (3*pow(x, 3)) - (2*pow(x, 2));
 }
 
 double calculateRiemannSum(double a, double b, double delta) {
