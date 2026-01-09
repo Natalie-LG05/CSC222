@@ -18,7 +18,7 @@ int main() {
     double delta = promptUser('d');  // get delta
 
     double sum = calculateRiemannSum(a, b, delta);    
-    printf("The integral over the provided lmits is %.4lf", sum);
+    printf("The integral over the provided lmits is %.4lf\n", sum);
     return 0;
 }
 
