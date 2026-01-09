@@ -50,5 +50,11 @@ double f(double x) {
 }
 
 double calculateRiemannSum(double a, double b, double delta) {
-    return 0.0;
+    double sum = 0.0;
+    double i = a;  // start at x=a
+    while (i < b) {
+        sum += f(i) * delta;
+        i += delta;
+    }
+    return sum;
 }
