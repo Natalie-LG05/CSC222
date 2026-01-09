@@ -52,7 +52,7 @@ double f(double x) {
 double calculateRiemannSum(double a, double b, double delta) {
     double sum = 0.0;
     double i = a;  // start at x=a
-    while (i < b) {
+    while (i < (b-(delta/2))) {
         sum += f(i) * delta;
         i += delta;
     }
