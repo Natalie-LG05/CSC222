@@ -40,6 +40,12 @@ int main() {
     free(values);
 
     int arr[numItems];
+    arr[0] = 4;
+    arr[3] = 6;
+    for (int i = 0; i < numItems; i++) {
+        printf("%d ", values[i]);
+    }
+    printf("\n");
     
     return 0;
 }
