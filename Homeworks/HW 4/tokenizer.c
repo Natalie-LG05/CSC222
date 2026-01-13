@@ -15,7 +15,7 @@ int main() {
         fgets(input, sizeof(input), stdin);
 
         // make a copy of the full input string for later use, since strtok() changes the original string
-        char input2[];
+        char input2[sizeof(input)];
         strcpy(&input2, input);
 
         // look through the user input token by token
