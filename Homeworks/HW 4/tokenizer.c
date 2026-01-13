@@ -1,3 +1,10 @@
+/*
+Homework 4: Tokenizer in C
+Name: Natalie Gates
+Class: CSC-222
+Date: 01-13-2026
+*/
+
 #include <stdio.h>
 #include <string.h>
 
@@ -22,7 +29,7 @@ int main() {
             numTokens++;
             printf(" %s", token);
             token = strtok(NULL, " ");
-            
+
             // the input will have a leading newline, so this avoids printing an extra newline after the last token
             if (token) {
                 printf("\n");
