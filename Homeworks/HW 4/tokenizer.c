@@ -26,7 +26,7 @@ int main() {
             }
         }
 
-        printf("%d token(s) read\n\n");
+        printf("%d token(s) read\n\n", numTokens);
     }
     
     return 0;
