@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    char input[];
+    char input[50];
     scanf("%s", &input);
     
     while (1) {
