@@ -5,7 +5,7 @@ int main() {
         char input[256];
         printf("$ ");
         fgets(input, 256, stdin);
-        printf("%s\n", input);
+        printf("%s", input);
     }
     
     return 0;
