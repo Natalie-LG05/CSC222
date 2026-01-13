@@ -10,7 +10,16 @@ union Student {
     char name[10];
 };
 
+// This syntax means you don't have to put union when declaring a Teacher variable
+// works for structs too
+typedef union {
+    double gpa;
+    char name[10];
+} Techer;
+
 int main() {
+    Teacher t1;  // declare a typedef union like this (no need to put the union keyword before it); works for structs too
+    
     union Student student;
     student.gpa = 3.8;
     strcpy(student.name, "Tony");
