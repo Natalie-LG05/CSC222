@@ -8,8 +8,7 @@ int main() {
         fgets(input, 256, stdin);
 
         char *token = strtok(input, " ");
-        printf("size: %lu", sizeof(token) / sizeof(char));
-        if (strcmp(token, "exit") == 0) {
+        if (strcmp(token, "exit\n") == 0) {
             break;
         }
 
