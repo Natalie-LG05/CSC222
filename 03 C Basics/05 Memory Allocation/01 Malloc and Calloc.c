@@ -39,6 +39,7 @@ int main() {
     // free up the memory
     free(values);
 
+    // random testing
     int arr[numItems];
     arr[0] = 4;
     arr[3] = 6;
