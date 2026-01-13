@@ -7,6 +7,14 @@ int main() {
         printf("$ ");
         fgets(input, 256, stdin);
 
+        char *tokensPointer = strtok(input, " ");
+        for (int i = 0; i < 15; i++) {
+            char token[] = strtok(NULL, " ");
+            if (token) {
+                printf("%s\n", token);
+            }
+        }
+
         if (strcmp(input, "exit") == 0) {
             break;
         }
