@@ -7,11 +7,11 @@ int main() {
         printf("$ ");
         fgets(input, 256, stdin);
 
-        char *tokensPointer = strtok(input, " ");
+        char *token = strtok(input, " ");
         for (int i = 0; i < 15; i++) {
-            char token[] = strtok(NULL, " ");
             if (token) {
                 printf("%s\n", token);
+                token = strtok(NULL, " ");
             }
         }
 
