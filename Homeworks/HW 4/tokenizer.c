@@ -7,7 +7,7 @@ int main() {
         printf("$ ");
         fgets(input, 256, stdin);
 
-        if (strcmp(input, "exit")) {
+        if (strcmp(input, "exit") == 0) {
             break;
         }
         
