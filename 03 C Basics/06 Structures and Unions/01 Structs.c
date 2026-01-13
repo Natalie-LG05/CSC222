@@ -2,6 +2,8 @@
 
 // Structs
 // Memory is allocated for each individual member
+// Even if you make the char[] length 19, it will still be size 24bytes because
+// an int being in the struct forces the struct's space to be divisible by 4 bytes (an int is 4 bytes)
 struct Person {
     int age;  // location of first member is location of the entire Person structure
     char name[20];
