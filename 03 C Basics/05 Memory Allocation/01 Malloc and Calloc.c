@@ -35,6 +35,11 @@ int main() {
         printf("%d ", values[i]);
     }
     printf("\n");
+
+    // free up the memory
+    free(values);
+
+    int arr[numItems];
     
     return 0;
 }
