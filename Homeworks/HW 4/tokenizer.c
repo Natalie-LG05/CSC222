@@ -2,7 +2,7 @@
 
 int main() {
     char input[50];
-    scanf("%s", &input);
+    scanf("%s", input);
     
     while (1) {
         break;
