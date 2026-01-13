@@ -4,6 +4,7 @@
 // Unions
 // all the members share memory locations
 // thus, you cannot access more than one member at the same time
+// that is, a union can only remember one member at a time basically
 union Student {
     double gpa;
     char name[10];
