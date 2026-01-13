@@ -12,7 +12,10 @@ int main() {
     while (1) {
         char input[256];
         printf("$ ");
-        fgets(input, 256, stdin);
+        fgets(input, sizeof(input), stdin);
+
+        // make a copy of the full input string for later use, since strtok() changes the original string
+        char input2[] = strcpy(input);
 
         // look through the user input token by token
         char *token = strtok(input, " ");
@@ -21,11 +24,11 @@ int main() {
             break;
         }
 
-        printf("Line read: %s", input);
+        printf("Line read: %s", input2);
         printf("Token(s):\n");
 
         int numTokens = 0;
-        for (int i = 0; i < 256; i++) {
+        for (int i = 0; i < sizeof(input2); i++) {
             numTokens++;
             printf(" %s", token);
             token = strtok(NULL, " ");
