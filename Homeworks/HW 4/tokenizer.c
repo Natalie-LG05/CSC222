@@ -19,10 +19,15 @@ int main() {
 
         int numTokens = 0;
         for (int i = 0; i < 256; i++) {
+            numTokens++;
+            printf(" %s", token);
+            token = strtok(NULL, " ");
+            
+            // the input will have a leading newline, so this avoids printing an extra newline after the last token
             if (token) {
-                numTokens++;
-                printf(" %s\n", token);
-                token = strtok(NULL, " ");
+                printf("\n");
+            } else {
+                break;
             }
         }
 
