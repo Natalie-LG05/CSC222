@@ -1,12 +1,11 @@
 #include <stdio.h>
 
 int main() {
-    char input[50];
-    scanf("%s", input);
-    printf("%s\n", input);
-    
     while (1) {
-        break;
+        char input[256];
+        printf("$ ");
+        fgets(input, 256, stdin);
+        printf("%s\n", input);
     }
     
     return 0;
