@@ -1,12 +1,14 @@
 #include <stdio.h>
 
-// Functional prototypes
-void printPerson(struct Person person);
-
+// Structs
+// Memory is allocated for each individual member
 struct Person {
     int age;  // location of first member is location of the entire Person structure
     char name[20];
 };
+
+// Functional prototypes
+void printPerson(struct Person person);
 
 int main() {
     struct Person bill = {10, "Bill"};
