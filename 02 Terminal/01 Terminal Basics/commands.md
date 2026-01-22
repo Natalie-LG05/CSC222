@@ -34,7 +34,7 @@ history -c          - clears
 history > filename  - stores the history in a file
 
 # Redirection
-\>                   - redirects the standard output
+>                   - redirects the standard output
 
 ### Commands that display contents of a file
 cat
