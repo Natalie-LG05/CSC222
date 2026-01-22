@@ -28,13 +28,15 @@ Octal Permission Values:
     w = 2  
     x = 1  
 
+```
 Ex: -   rw-            rw-          r--
         4+2 = 6        4+2 = 6      4
 Octal Perm is 664
 
 Ex: -   rwx            --x          -wx
         7              1            3
-Octal Perm is 713  
+Octal Perm is 713 
+``` 
 
 The default is 664
 
