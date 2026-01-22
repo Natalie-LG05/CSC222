@@ -39,7 +39,8 @@ Octal Perm is 713
 The default is 664
 
 ### The Change Mode Command (chmod)  
-Key:
+Key:  
+```
 u = user who owns the file
 g = group that owns the file
 o = all other users
@@ -52,15 +53,18 @@ Ex: chmod u-x+r file.txt
 Ex: chmod 755 file.txt
 Ex: chmod 664 file.txt
 Ex: chmod 000 file.txt
+```
 
 ### chown command  
+```
 sudo chown [newowner] [filename]  
 sudo chown :[newgroupowner] [filename]  
 sudo chown [newowner] :[newgroupowner] [filename]  
+```
 
-Adding new groups:
-groupadd is a command
+Adding new groups:  
+groupadd is a command  
 
-Adding new users:
-useradd
-adduser
+Adding new users:  
+useradd  
+adduser  
