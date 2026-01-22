@@ -1,7 +1,7 @@
 
 
 ## Some Basic Commands
-
+```
 cd          - change directory
 cd ~        - change directory to the user's home directory
 cd [path]   - go to the folder indicated
@@ -48,7 +48,7 @@ head
 vim
 nano 
 vimtutor            - if you want to learn vim
-
+```
 
 
 
