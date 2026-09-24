@@ -11,7 +11,7 @@
 
 #### Standard Input Redirection
 ```
-- idea: provide input into a program viaa the command line
+- idea: provide input into a program via the command line
 - standard input is often abbreviated `stdin`
 - symbols used are `<`
 ```

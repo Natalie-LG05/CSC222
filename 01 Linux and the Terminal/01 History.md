@@ -53,7 +53,7 @@
 ```
 
 ```
-1994 Redhat Distroy born
+1994 Redhat Distro born
 - Tends to be used for enterprise applications
     - Fedora
     - CentOS
