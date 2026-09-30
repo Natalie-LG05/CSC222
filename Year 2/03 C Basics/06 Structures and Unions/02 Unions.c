@@ -15,7 +15,7 @@ union Student {
 typedef union {
     double gpa;
     char name[10];
-} Techer;
+} Teacher;
 
 int main() {
     Teacher t1;  // declare a typedef union like this (no need to put the union keyword before it); works for structs too

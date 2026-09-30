@@ -5,7 +5,7 @@
 // The example is calculating a final letter grade from a variety of grades
 
 // Functional Prototyping
-double computerAverage(double values[], int size);
+double computeAverage(double values[], int size);
 char assignLetterGrade(double avg);
 
 int main() {
@@ -23,13 +23,13 @@ int main() {
 
     // to get the length utilize the sizeof() function
     // note: sizeof() returns the size in bytes
-    int size = sizeof(grades) / sizeof(double);
+    int length = sizeof(grades) / sizeof(double);
 
     // %p for pointer
     printf("Grades memloc: %p\n", grades);
     printf("Length: %lu\n", length);
 
-    double average = computeAvereage(grades, length);
+    double average = computeAverage(grades, length);
     char letter = assignLetterGrade(average);
 
     // Outputting results

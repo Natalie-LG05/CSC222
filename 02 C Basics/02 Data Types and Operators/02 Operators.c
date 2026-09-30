@@ -73,8 +73,8 @@ int main() {
     */
 
     // Example of bitwise OR
-    int x = 10;
-    int y = 15;
+    x = 10;
+    y = 15;
     /*
     
     x:     00000000 00000000 00000000 00001010
@@ -89,8 +89,8 @@ int main() {
     */
 
     // Example of bitwise XOR
-    int x = 10;
-    int y = 15;
+    x = 10;
+    y = 15;
     /*
     
     x:     00000000 00000000 00000000 00001010
