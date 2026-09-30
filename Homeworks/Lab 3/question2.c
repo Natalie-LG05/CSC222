@@ -4,7 +4,7 @@ const int hoursPerDay = 24;
 const int minutesPerHour = 60;
 const int secondsPerMinute = 60;
 
-int main() {
+int main(void) {
     printf("Enter a negative value at any point to quit.\n");
 
     while (1) {

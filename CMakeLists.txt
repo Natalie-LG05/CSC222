@@ -25,3 +25,4 @@ add_executable(01-Grades "02 C Basics/03 Arrays, Funcs, Loops, Pointers/01 Grade
 add_executable(02-Grades-with-Pointers "02 C Basics/03 Arrays, Funcs, Loops, Pointers/02 Grades - with Pointers.c")
 add_executable(question1 "Homeworks/Lab 3/question1.c")
 add_executable(question2 "Homeworks/Lab 3/question2.c")
+add_executable(question3 "Homeworks/Lab 3/question3.c")
