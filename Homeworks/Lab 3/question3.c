@@ -14,6 +14,7 @@ int main(void) {
         int bits = sizeof(int) * 8;
         int hasFoundOne = 0;
 
+        printf("Binary equivalent: ");
         for (int i = bits - 1; i >= 0; i--) {
             int bit = (num >> i) & 1;
             if (bit == 1) hasFoundOne = 1;
