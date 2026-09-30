@@ -39,7 +39,7 @@ int main() {
         else printf("%ds\n", seconds);
     }
 
-    printf("Done");
+    printf("Done\n");
 
     return 0;
 }
