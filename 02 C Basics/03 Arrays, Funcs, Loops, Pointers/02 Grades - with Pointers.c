@@ -15,6 +15,14 @@ int main(void) {
     double average = computeAverage(pGrades, length);
     char letter = assignLetterGrade(average);
 
+    // print grades
+    for (double *p = grades; p < grades + length; p++) {
+        printf("%.1f at %p\n", *p, p);
+    }
+
+    printf("\nAverage: %.1f\n", average);
+    printf("Final Grade: %c\n", letter);
+
     return 0;
 }
 
@@ -32,5 +40,9 @@ double computeAverage(double *values, int length) {
 }
 
 char assignLetterGrade(double avg) {
-
+    if (avg >= 90) return 'A';
+    if (avg >= 80) return 'B';
+    if (avg >= 70) return 'C';
+    if (avg >= 60) return 'D';
+    return 'F';
 }
