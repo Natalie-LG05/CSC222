@@ -101,7 +101,7 @@ int main() {
            
     */
 
-    // Bitshitfs
+    // Bitshifts
     /*
 
     x >> 2 (shift the bits 2 places to the right)

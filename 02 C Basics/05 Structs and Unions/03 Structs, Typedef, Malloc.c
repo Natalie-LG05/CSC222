@@ -17,13 +17,7 @@ int main() {
     int length;
     scanf("%d", &length);
 
-    int a[length];
-    for (int i = 0; i < length; i++) {
-        a[i] = i*2;
-    }
-    for (int i = 0; i < length; i++) {
-        printf("%d ", a[i]);
-    }
+    printf("%s's age is %d.\n", personPtr->name, personPtr->age);
 
-    return 0;
+    free(personPtr);
 }
