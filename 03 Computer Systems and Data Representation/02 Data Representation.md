@@ -1,7 +1,7 @@
 ## Data Representation  
 A bit (binary digit) is our base unit.  
 A byte is 8 bits.  
-2 hex digits is 1 bytes.  
+2 hex digits is 1 byte.  
 
 C logical operators (e.g. &&, ||) treat nonzero arguments as 1, and zero as 0  
 
@@ -12,7 +12,7 @@ Def: The word size of a machine (typically 32-bit or 64-bit) determines the max 
 
 ### Byte Ordering in Memory for Multibyte Data  
 Big Endian - Big end first; Most significant byte is first  
-Little Endiant - Little end first; Least significant byte is first  
+Little Endian - Little end first; Least significant byte is first  
 
 Example: Represent x = 0x01234567 in memory using big and little endian orderings.  
 Big Endian:
