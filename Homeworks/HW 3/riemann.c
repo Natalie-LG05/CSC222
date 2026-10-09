@@ -11,8 +11,6 @@ double *makeSamplePoints(double a, double b, double delta, int *count);
 double riemannSum(const double *start, const double *end, double delta);
 
 int main(void) {
-    int ar[999999999999999];
-
     double a;
     double b;
     double delta;
