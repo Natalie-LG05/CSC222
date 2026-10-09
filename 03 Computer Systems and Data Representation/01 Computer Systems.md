@@ -33,7 +33,11 @@ ld: Merge all needed object files (there may be needed object files elsewhere)
 
 ### Role of the OS:
 The OS protects the hardware and provides services to interact with the hardware.  
-Apps go through the OS to affect hardware. Hardware includes the Processor, Main Memory, and I/O Devices.  
+Apps go through the OS to affect hardware. 
+
+Kernel: The heart of the system. Serves as the interface between the hardware and software.
+
+Hardware includes the Processor, Main Memory, and I/O Devices.  
 The OS achieves these goals through 3 fundamental abstractions.  
 
 Files - the abstraction of I/O  

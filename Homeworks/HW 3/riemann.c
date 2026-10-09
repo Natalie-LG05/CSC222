@@ -11,6 +11,8 @@ double *makeSamplePoints(double a, double b, double delta, int *count);
 double riemannSum(const double *start, const double *end, double delta);
 
 int main(void) {
+    int ar[999999999999999];
+
     double a;
     double b;
     double delta;
@@ -59,7 +61,7 @@ double f(double x) {
 double *makeSamplePoints(double a, double b, double delta, int *count) {
     const int n = (int)((b-a) / delta);
 
-    double *samplePoints = malloc(sizeof(int) * n);
+    double *samplePoints = malloc(sizeof(double) * n);
 
     for (int i = 0; i < n; i++) {
         *(samplePoints + i) = a + i*delta;
