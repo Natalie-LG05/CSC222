@@ -45,6 +45,7 @@ A file is a sequence of bytes. Files model display, hard drives, disks, etc.
 
 Virtual Memory - the abstraction of main memory and I/O.  
 Each process assumes exclusive use of main memory through this abstraction.  
+Processes view memory as a large array of bytes known as virtual memory.  
 
 Processes - the abstraction of processor, main memory, and I/O.  
 "Context Switching" allows the OS to run multiple processes "at the same time."  
