@@ -34,3 +34,5 @@ add_executable(02-Structs-and-Pointers "02 C Basics/05 Structs and Unions/02 Str
 add_executable(03-Structs-Typedef-Malloc "02 C Basics/05 Structs and Unions/03 Structs, Typedef, Malloc.c")
 add_executable(04-Unions "02 C Basics/05 Structs and Unions/04 Unions.c")
 add_executable(HW-3 "Homeworks/HW 3/riemann.c")
+add_executable(02-syscall-write "04 System Calls/01 Using syscall func/02 syscall write.c")
+add_executable(03-write "04 System Calls/01 Using syscall func/03 write.c")
