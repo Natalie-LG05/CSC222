@@ -1,3 +1,4 @@
+#include <unistd.h>  // syscall() in here
 #include <sys/syscall.h>  // some helpful constants
 
 int main() {
