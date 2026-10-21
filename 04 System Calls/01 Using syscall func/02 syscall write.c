@@ -4,7 +4,7 @@
 int main() {
     // write
     syscall(
-      1,  // value for rax for write
+      SYS_write,  // value for rax for write (1)
       1,  // a 1 for stdout
       "hello\n",  // the message
       6  // the message is 6 bytes
@@ -12,7 +12,7 @@ int main() {
 
     // exit
     syscall(
-        60,  // syscall for exit
+        SYS_exit,  // syscall for exit (60)
         0  // exit code
     );
 }
