@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/types.h>  // contains the pid_t type def
+#include <sys/wait.h>
 
 int main() {
     int pid = fork();
@@ -25,6 +26,7 @@ int main() {
         printf("Hi from the parent process.\n");
         printf("From parent: child id is %d\n", pid);
         printf("From parent: parent id: %d\n", getpid());
+        wait(NULL);
     }
 
     // this is in both processes
