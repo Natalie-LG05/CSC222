@@ -23,7 +23,7 @@ int main() {
     }
 
     // this is in both processes
-    printf("hi from both\n");
+    printf("hi from both (%d)\n", pid);
 
     return 0;
 }
