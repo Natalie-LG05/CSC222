@@ -16,7 +16,6 @@ int main(int argc, char *argv[]) {
     char *destinationFilepath = argv[2];
 
     FILE *sourceFile = fopen(sourceFilepath, "rb");
-    FILE *destinationFile = fopen(destinationFilepath, "wb");
 
     if (sourceFile == NULL) {
         // there was some error opening the file
@@ -24,6 +23,8 @@ int main(int argc, char *argv[]) {
         perror("Error opening source file");
         return 1;
     }
+
+    FILE *destinationFile = fopen(destinationFilepath, "wb");
 
     int data = fgetc(sourceFile);
     while (data != EOF) {
