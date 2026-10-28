@@ -18,7 +18,10 @@ int main(int argc, char *argv[]) {
         // in child process
         printf("Child %d:\n", getpid());
 
+        // execute the provided executable
         char *args[] = {argv[1], NULL};
         execv(argv[1], args);
+
+
     }
 }

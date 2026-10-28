@@ -54,5 +54,17 @@ int main() {
         }
 
         // extracting status info
+        if (WIFEXITED(status)) {
+            // child exits normally
+            printf("Child exited with status %d\n", WEXITSTATUS(status));
+
+            // look at the hex of the status
+            printf("status var: %#x\n", status);
+        } else if (WIFSIGNALED(staatus)) {
+            // child is killed by a signal
+
+            // use strsignal(WTERMSIG(status)) for human readable signal
+            printf("Child was killed by signal %d\n", WTERMSIG(status));
+        }
     }
 }
