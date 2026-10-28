@@ -26,6 +26,11 @@ int main(int argc, char *argv[]) {
 
     FILE *destinationFile = fopen(destinationFilepath, "wb");
 
+    if (destinationFile == NULL) {
+        perror("Error opening destination file");
+        return 1;
+    }
+
     int data = fgetc(sourceFile);
     while (data != EOF) {
         fputc(data, destinationFile);
