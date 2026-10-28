@@ -21,7 +21,5 @@ int main(int argc, char *argv[]) {
         // execute the provided executable
         char *args[] = {argv[1], NULL};
         execv(argv[1], args);
-
-
     }
 }

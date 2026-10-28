@@ -20,7 +20,7 @@ int main() {
 
     close(fd);
 
-    printf("These are the contents of the file.");
+    printf("These are the contents of the file.\n");
 
     return 0;
 }
