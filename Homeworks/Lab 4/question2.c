@@ -1,6 +1,7 @@
 #include <unistd.h>
 #include <stdio.h>
 #include <sys/types.h>
+#include <sys/wait.h>
 
 // functional prototyping
 void getChecksum(char* filepath, char* outputAddress);
