@@ -24,10 +24,6 @@ int main(int argc, char *argv[]) {
         perror("Error opening source file");
         return 1;
     }
-    if (destinationFile == NULL) {
-        perror("Error opening destination file");
-        return 1;
-    }
 
     int data = fgetc(sourceFile);
     while (data != EOF) {
