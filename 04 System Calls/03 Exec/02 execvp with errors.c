@@ -15,7 +15,7 @@ int main() {
         NULL
     };
 
-    execvp(args1[0], args1);
+    execvp(args2[0], args1);
 
     // perror prints the error and you can easily add your own message
     // newline is already included
