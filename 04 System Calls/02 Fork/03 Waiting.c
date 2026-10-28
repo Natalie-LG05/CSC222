@@ -60,7 +60,7 @@ int main() {
 
             // look at the hex of the status
             printf("status var: %#x\n", status);
-        } else if (WIFSIGNALED(staatus)) {
+        } else if (WIFSIGNALED(status)) {
             // child is killed by a signal
 
             // use strsignal(WTERMSIG(status)) for human readable signal
