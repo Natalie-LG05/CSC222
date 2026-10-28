@@ -22,4 +22,7 @@ int main(int argc, char *argv[]) {
         char *args[] = {argv[1], NULL};
         execv(argv[1], args);
     }
+
+    waitpid(pid, NULL, 0);
+    return 0;
 }
