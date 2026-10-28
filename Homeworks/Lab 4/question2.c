@@ -56,7 +56,7 @@ void getChecksum(char* filepath, char* outputAddress) {
         return;  // in case exec fails I am making this return to ensure the child doesn't run any code below
     }
 
-    close(pipefd[0]);  // close the write end of the pipe as we do not need it here
+    close(pipefd[1]);  // close the write end of the pipe as we do not need it here
     FILE *pipeStream = fdopen(pipefd[0], "r");  // access the pipe's read end as if it is a file
     close(pipefd[0]);  // close the read end of the pipe as we are done with it
 
