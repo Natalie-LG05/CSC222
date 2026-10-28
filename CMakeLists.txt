@@ -41,3 +41,4 @@ add_executable(02-Child-vs-Parent "04 System Calls/02 Fork/02 Child vs Parent.c"
 add_executable(03-Waiting "04 System Calls/02 Fork/03 Waiting.c")
 add_executable(question1-4 "Homeworks/Lab 4/question1.c")
 add_executable(01-execvp "04 System Calls/03 Exec/01 execvp.c")
+add_executable(02-execvp-with-errors "04 System Calls/03 Exec/02 execvp with errors.c")
