@@ -21,11 +21,11 @@ int main(int argc, char *argv[]) {
     if (sourceFile == NULL) {
         // there was some error opening the file
         // for simplicity sake let's just assume the file did not exist
-        perror("Error opening source file: ");
+        perror("Error opening source file");
         return 1;
     }
     if (destinationFile == NULL) {
-        perror("Error opening destination file: ");
+        perror("Error opening destination file");
         return 1;
     }
 
