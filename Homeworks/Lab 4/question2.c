@@ -18,6 +18,15 @@ int main(int argc, char *argv[]) {
     FILE *sourceFile = fopen(sourceFilepath, "rb");
     FILE *destinationFile = fopen(destinationFilepath, "wb");
 
+    if (sourceFile == NULL) {
+        // there was some error opening the file
+        // for simplicity sake let's just assume the file did not exist
+        perror("Error opening source file: ");
+    }
+    if (destinationFile == NULL) {
+        perror("Error opening destination file: ");
+    }
+
     int data = fgetc(sourceFile);
     while (data != EOF) {
         fputc(data, destinationFile);
