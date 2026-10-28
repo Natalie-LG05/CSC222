@@ -60,8 +60,8 @@ void getChecksum(char* filepath, char* outputAddress) {
     waitpid(pid, NULL, 0);
     close(pipefd[1]);  // close the write end of the pipe as we do not need it here
     FILE *pipeStream = fdopen(pipefd[0], "r");  // access the pipe's read end as if it is a file
-    close(pipefd[0]);  // close the read end of the pipe as we are done with it
 
     fscanf(pipeStream, "%32s", outputAddress);  // get the checksum from the pipe stream
     fclose(pipeStream);
+    close(pipefd[0]);  // close the read end of the pipe as we are done with it
 }
