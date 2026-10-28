@@ -22,9 +22,11 @@ int main(int argc, char *argv[]) {
         // there was some error opening the file
         // for simplicity sake let's just assume the file did not exist
         perror("Error opening source file: ");
+        return 1;
     }
     if (destinationFile == NULL) {
         perror("Error opening destination file: ");
+        return 1;
     }
 
     int data = fgetc(sourceFile);
@@ -46,6 +48,8 @@ int main(int argc, char *argv[]) {
     // call md5sum command to get the checksum of the destination file
     getChecksum(destinationFilepath, checksum);
     printf("MD5 (%s) = %s\n", destinationFilepath, checksum);
+
+    return 0;
 }
 
 void getChecksum(char* filepath, char* outputAddress) {
