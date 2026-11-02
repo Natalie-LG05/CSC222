@@ -25,7 +25,7 @@ int main() {
     // let the child do its thing for a little bit
     sleep(5);
 
-    printf("sending SIGTERM to child");
+    printf("sending SIGTERM to child\n");
 
     // kill is used to send signals (not just to kill programs)
     // use the process id you want to send the signal to
