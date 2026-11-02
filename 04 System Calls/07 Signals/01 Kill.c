@@ -34,7 +34,7 @@ int main() {
 
     // wait for child to terminate
     wait(NULL);
-    printf("Child has terminated");
+    printf("Child has terminated\n");
 
     exit(0);
 }
