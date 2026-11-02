@@ -5,6 +5,7 @@
 #include <string.h>
 
 void handleSignal(int sig) {
+    // be sure you have the \n (or signal won't print anything)
     printf("Received %d: %s\n", sig, strsignal(sig));
 }
 
