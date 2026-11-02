@@ -45,3 +45,6 @@ add_executable(02-execvp-with-errors "04 System Calls/03 Exec/02 execvp with err
 add_executable(01-dup2 "04 System Calls/05 Dup2/01 dup2.c")
 add_executable(question2-4 "Homeworks/Lab 4/question2.c")
 add_executable(01-open "04 System Calls/04 Open/01 open.c")
+add_executable(02-fopen "04 System Calls/04 Open/02 fopen.c")
+add_executable(01-piping "04 System Calls/06 Piping/01 Piping.c")
+add_executable(01-kill "04 System Calls/07 Signals/01 Kill.c")
