@@ -15,7 +15,7 @@ int main(int argc, char* argv[]) {
 
     pid_t targetProcess = atoi(argv[1]);
 
-    printf("Sender: sending SIGUSR1 to PID %lld\n", targetProcess);
+    printf("Sender: sending SIGUSR1 to PID %d\n", targetProcess);
     kill(targetProcess, SIGUSR1);
 
     return 0;
