@@ -36,5 +36,6 @@ fi
 # for strings
 # [ "hi" == 'hi" ]  # returns True for string literal matching
 
+# hold off on this part (he confused himself via bash)
 # my_var="hello world"
 # [ $myvar == "hello world" ]  # returns false because of the space
