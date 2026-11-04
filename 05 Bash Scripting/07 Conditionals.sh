@@ -22,3 +22,6 @@ then
 else
   echo "$1 is 5"
 fi
+
+# just some notes from here on out
+# integer comparisons
