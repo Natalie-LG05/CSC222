@@ -25,3 +25,10 @@ fi
 
 # just some notes from here on out
 # integer comparisons
+# [ 3 -ge 2 ]  # greater than or equal
+# (( 5 >= ))
+
+# [ 2 -le 2 ]  # less than or equal
+# (( 2 <= 6 ))
+
+# [ 5 -eq 5 ]  # note the == is not for ints
