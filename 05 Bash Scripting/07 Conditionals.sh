@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# use test to do a comparison
+# use fi at the end of an if statement to finish the if statement
+# yes it is if backwards
+if test $1 -gt 5
+then
+  echo "arg is larger"
+fi
+
+# shorthand for test
+# must put spaces at start and end of bracketed area
+# ; for alternate syntax
+if [ $1 -lt 5 ]; echo "arg is smaller than 5" fi
+
+if [ $1 -lt 5 ]
+then
+  echo "arg is smaller than 5"
+elif [ $1 -gt 5]
+then
+  echo "arg is greater than 5"
+else
+  echo "$1 is 5"
+fi
