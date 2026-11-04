@@ -32,3 +32,9 @@ fi
 # (( 2 <= 6 ))
 
 # [ 5 -eq 5 ]  # note the == is not for ints
+
+# for strings
+# [ "hi" == 'hi" ]  # returns True for string literal matching
+
+# my_var="hello world"
+# [ $myvar == "hello world" ]  # returns false because of the space
