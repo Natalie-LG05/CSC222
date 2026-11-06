@@ -36,6 +36,13 @@ fi
 # for strings
 # [ "hi" == 'hi" ]  # returns True for string literal matching
 
-# hold off on this part (he confused himself via bash)
 # my_var="hello world"
-# [ $myvar == "hello world" ]  # returns false because of the space
+# [ $myvar == "hello world" ]  # results in an error because of "string splitting"
+# fix it with quotes
+[ "$my_var" == "hello world" ]  # returns true
+[[ $my_var == "hello world" ]]  # returns true
+
+avar=""
+[ -z $avar ]  # -z checks for empty string
+
+[ -n $avar ]  # -n checks if it is not empty/null
