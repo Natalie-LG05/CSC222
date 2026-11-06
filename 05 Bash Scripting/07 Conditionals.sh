@@ -11,7 +11,10 @@ fi
 # shorthand for test
 # must put spaces at start and end of bracketed area
 # ; for alternate syntax
-if [ $1 -lt 5 ]; echo "arg is smaller than 5" fi
+if [ $1 -lt 5 ]
+then
+  echo "arg is smaller than 5"
+fi
 
 if [ $1 -lt 5 ]
 then
