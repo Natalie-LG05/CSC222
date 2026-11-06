@@ -39,8 +39,8 @@ fi
 # my_var="hello world"
 # [ $myvar == "hello world" ]  # results in an error because of "string splitting"
 # fix it with quotes
-[ "$my_var" == "hello world" ]  # returns true
-[[ $my_var == "hello world" ]]  # returns true
+# [ "$my_var" == "hello world" ]  # returns true
+# [[ $my_var == "hello world" ]]  # returns true
 
 avar=""
 [ -z $avar ]  # -z checks for empty string

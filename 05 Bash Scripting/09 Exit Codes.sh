@@ -12,3 +12,6 @@ echo "Exit code from akjfhgk is $?"
 
 # Use the exit command to force a script to exit
 exit 8
+
+# can use `set -e` at the top of your program to cause the
+# script to exit when it hits an error instead of continuing
