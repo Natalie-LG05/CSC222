@@ -8,9 +8,9 @@ echo "3 - Burgers"
 read food;
 
 case $food in
-    1) echo "Pizza is great";;
-    2) echo "The caf's chicken nuggets are better than McD"
+  1) echo "Pizza is great";;
+  2) echo "The caf's chicken nuggets are better than McD"
        echo "It's because the playplace is gone";;
-    3) echo "Caf's burgers are protein";;
-    *) echo "Not an option";;
+  3) echo "Caf's burgers are protein";;
+  *) echo "Not an option";;
 esac

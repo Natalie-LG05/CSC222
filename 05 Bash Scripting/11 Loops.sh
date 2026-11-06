@@ -9,3 +9,10 @@ do
 done
 
 echo
+
+until [ -f "hello.txt" ]
+do
+  echo "Make a file named hello.txt"
+  read -p "Name of file: " filename
+  touch $filename
+done
