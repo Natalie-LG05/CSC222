@@ -42,7 +42,7 @@ fi
 # [ "$my_var" == "hello world" ]  # returns true
 # [[ $my_var == "hello world" ]]  # returns true
 
-avar=""
-[ -z $avar ]  # -z checks for empty string
+# avar=""
+# [ -z $avar ]  # -z checks for empty string
 
-[ -n $avar ]  # -n checks if it is not empty/null
+# [ -n $avar ]  # -n checks if it is not empty/null
