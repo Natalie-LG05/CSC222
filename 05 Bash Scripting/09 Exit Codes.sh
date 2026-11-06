@@ -9,3 +9,6 @@ echo "Exit code from ls was $?";
 # example:
 akjfhgk -abcdefg  # not a real command, not real args
 echo "Exit code from akjfhgk is $?"
+
+# Use the exit command to force a script to exit
+exit 8
