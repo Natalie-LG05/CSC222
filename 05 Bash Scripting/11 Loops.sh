@@ -7,3 +7,5 @@ do
   ((counter++))
   sleep 0.25
 done
+
+echo
