@@ -9,8 +9,7 @@ _start:
     ; write(1, greeting, 6)
     mov rax, 1  ; syscall for write is 1, move into rax
     mov rdi, 1  ; file descriptor for stdout
-    ;mov rsi, greeting  ; memaddr for "hello\n"
-    lea rsi, [rel greeting]
+    mov rsi, greeting  ; memaddr for "hello\n"
     mov rdx, 6  ; length of "hello\n"
     syscall
 
