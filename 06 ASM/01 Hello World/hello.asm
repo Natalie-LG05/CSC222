@@ -17,3 +17,7 @@ _start:
     mov rax, 60  ; syscall for exit
     mov rdi, 0  ; exit code 0
     syscall
+
+; to run:
+; nasm -f elf64 hello.asm -o hello.o
+; ld hello.o -o hello
