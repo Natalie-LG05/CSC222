@@ -4,6 +4,7 @@ greeting:  ; label for "hello" (like a variable)
 
 section .text  ; executable machine code
 global _start  ; export _start for the linker to use as the entry point
+
 _start:
     ; write(stdout, "hello\n", sizeof("hello\n")
     ; write(1, greeting, 6)
