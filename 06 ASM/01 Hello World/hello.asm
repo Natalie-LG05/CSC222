@@ -1,4 +1,4 @@
-section .rodata  ; read only data section\
+section .rodata  ; read only data section
 greeting:  ; label for "hello" (like a variable)
     db "hello", 10
 
