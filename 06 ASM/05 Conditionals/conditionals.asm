@@ -16,7 +16,8 @@ section .text
 
 _start:
     ; moving some values to make a comparison
-    mov rax, 1204647
+    mov rax, 10
+    ; mov rax, 1204647
     mov rbx, 10
 
     cmp rax, rbx  ; rax - rbx (if values are equal, then zero flag will be 1)
